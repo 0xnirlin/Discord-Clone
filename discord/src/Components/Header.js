@@ -6,12 +6,13 @@ import right from "./right.svg";
 import left from "./left.svg";
 import Fade from 'react-reveal/Fade';
 
+
 export const Header = () => {
     return (
         <div >
     
                 <div className="headWrap">
-                <Fade bottom >
+                <Fade left >
                     <div className="top">
                         <div className="textwrap">
                         <h1>IMAGINE A PLACE...</h1>
