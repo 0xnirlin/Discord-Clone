@@ -2,6 +2,10 @@ import React from "react";
 import one from "./one.svg";
 import two from "./two.svg";
 import three from "./three.svg";
+import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
+
+
 
 const sectionDetail = [
     {
@@ -25,16 +29,22 @@ const sectionDetail = [
 ];
 export const Section = () => {
     return (
-        <div >
+        <div className="fool">
                 {sectionDetail.map((e) => (
-                    <div className={"swrap " + e.cls}>
+                    <div className={e.cls}>                    
+                    <Fade bottom delay ={100}>
+                    <div className="swrap ">
+                    {/* <Reveal effect="fadeInUp"> */}
                         <div className="main-image">
                             <img src={e.img} alt="main"></img>
                         </div>
+                    {/* </Reveal> */}
                         <div className="main-text">
                             <h1>{e.heading}</h1>
                             <p>{e.para}</p>
                         </div>
+                    </div>
+                    </Fade>
                     </div>
                 ))}
         </div>
