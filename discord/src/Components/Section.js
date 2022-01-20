@@ -2,6 +2,7 @@ import React from "react";
 import one from "./one.svg";
 import two from "./two.svg";
 import three from "./three.svg";
+import four from "./four.svg";
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
 
@@ -31,8 +32,8 @@ export const Section = () => {
     return (
         <div className="fool">
                 {sectionDetail.map((e) => (
-                    <div className={e.cls}>                    
-                    <Fade bottom delay ={100}>
+                    <div className={e.cls + " section-piece"}>                    
+                    <Fade left delay ={100}>
                     <div className="swrap ">
                     {/* <Reveal effect="fadeInUp"> */}
                         <div className="main-image">
@@ -47,6 +48,18 @@ export const Section = () => {
                     </Fade>
                     </div>
                 ))}
+                <div className="swrap alpha dim">
+                    <Fade left>
+                    <div className="main-text2">
+                        <h1>RELIABLE TECH FOR STAYING CLOSE</h1>
+                        <p>Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+                    </div>
+                    <div className="main-image four">
+                        <img src={four} alt = "four"></img>
+                    </div>
+                    </Fade>
+
+                </div>
         </div>
     );
 };

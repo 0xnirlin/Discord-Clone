@@ -15,10 +15,21 @@ button
   font-weight: 450;
 
 }
-.play button
+.black
 {
-  color: rgb(48, 48, 48);
-  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background: rgb(48, 48, 48);
+  /* display: none; */
+}
+.white
+{
+  background-color: white;
+}
+.play 
+{
+  color: rgb(255, 255, 255);
+  background: rgb(48, 48, 48);
+  display: none;
 }
 nav
 {
@@ -38,11 +49,65 @@ nav
   flex-wrap: wrap;
   width: 100%;
   height: 60vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("/src/assets/back.svg");
+  background-position: bottom center;
+}
+.right
+{
+  position: absolute;
+  left: auto;
+  bottom: -240px;
+  left: -170px;
+  /* display: none; */
+}
+.left
+{
+  display: none;
+ 
 }
 .top
 {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: white;
   margin: 20px;
+}
+.textwrap h1
+{
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+.textwrap p
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 2rem;
+}
+.textwrap
+{
+  /* margin-top: 2rem; */
+  width: 70%;
+  text-align: center;
+}
+.bwrap
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.bwrap button
+{
+  margin: 10px;
 }
 .left
 {
@@ -50,13 +115,35 @@ nav
 }
 .swrap
 {
+  /* width: ; */
   padding: 4rem 2rem 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
+
+  /* flex-direction: column; */
   /* margin-top: 20px; */
   /* font-family: Montserrat; */
   /* flex-direction: column; */
+}
+.alpha
+{
+  flex-direction: column;
+  /* width: 50%; */
+}
+.alpha .main-text
+{
+  width: 50%;
+}
+.alpha h1
+{
+  font-weight: 900;
+  text-align: center;
+}
+.alpha p
+{
+  text-align: center;
 }
 
 .swrap img
@@ -71,8 +158,62 @@ nav
 .dim
 {
   background-color: #F6F6F6;
+
+}
+.blue
+{
+  background-color: #5865F2;
+  color: white;
+  
+}
+.nowrap
+{
+  display: flex;
+  flex-direction: column;
+}
+.nowrap button
+{
+  margin-top: 20px; 
+}
+.section-piece
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* gap: 1000px ; */
+}
+ .main-image
+{
+width: 60%;
+}
+.swrap .main-text p
+{
+  line-height: 2rem;
+}
+.swrap .main-text
+{
+ width: 400px;
+}
+.nowrap
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+footer
+{
+  width: 100%;
+  height: 100px;
+  background-color: #23272A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 @media only screen and (max-width: 600px) {
+
   .swrap
   {
     flex-direction: column;
@@ -82,19 +223,28 @@ nav
   {
     display: none;
   }
-  .top
-  {
-    margin: 30px;
-  }
+
+
+ 
   .right
   {
     display: none;
+  }
+  .blue
+  {
+    width: 100%;
+  }
+  .white, .black
+  {
+    display: block;
+
   }
   .headWrap
   {
     position: relative;
     flex-direction: column;
     height: 80vh;
+    /* padding-right: 30px; */
   }
   .imgwrap
   {
@@ -112,13 +262,37 @@ nav
   {
     margin-top: 20px;
   }
+  .textwrap
+  {
+    width: 92%;
+    /* margin: 20px; */
+    text-align: left;
+  
+    
+  }
+  .textwrap p 
+  {
+    line-height: 1.4rem;
+    font-size: 0.8rem;
+  }
   .bwrap
   {
-    margin-top: 20px;
+    margin-top: -10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: auto;
   }
   .top h1
   {
     font-weight: 900;
+    font-size: 30px;
+    text-align: left;
+  }
+  .top{
+    margin-top: -20rem;
+    width: 100%;
+    ;
   }
   p
   {
@@ -130,11 +304,39 @@ nav
     font-size: 15px;
     line-height: 1.8;
   }
+  .swrap .main-image
+  {
+    width: 30rem;
+  }
+  .section-piece
+  {
+    height: 70vh;
+    /* padding: 10px; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .swrap .main-text
+  {
+    width: 100%;
+  }
   .main-text h1
   {
     font-size: 30px;
     font-weight: 800;
   }
-
+  .nowrap
+  {
+    margin-top: -50px;
+  }
+  .end
+  {
+    /* max-width: 100%; */
+    letter-spacing: -0.5px;
+    
+  }
+  .nowrap
+  {
+    padding: 20px;
+  }
 
 }
