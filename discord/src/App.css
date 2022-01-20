@@ -3,6 +3,7 @@
   padding: 0px;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Montserrat;
+  /* overflow: hidden; */
 
 }
 
@@ -54,6 +55,7 @@ nav
   position: relative;
   background-image: url("/src/assets/back.svg");
   background-position: bottom center;
+  overflow: hidden;
 }
 .right
 {
@@ -253,8 +255,13 @@ footer
     
     
   }
+  .right
+  {
+    /* display: block; */
+  }
   .left
   {
+    display: block;
     margin-left: -5rem;
     
   }
@@ -338,5 +345,16 @@ footer
   {
     padding: 20px;
   }
+
+}
+@media only screen and (max-width: 1000px) {
+.right
+{
+  display: none;
+}
+.headWrap
+{
+  overflow: hidden;
+}
 
 }

@@ -4,7 +4,6 @@ import two from "./two.svg";
 import three from "./three.svg";
 import four from "./four.svg";
 import Fade from 'react-reveal/Fade';
-import Reveal from 'react-reveal/Reveal';
 
 
 
