@@ -105,6 +105,7 @@ nav
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
   /* flex-direction: column; */
 }
 .bwrap button
@@ -234,7 +235,7 @@ footer
   }
   .blue
   {
-    width: 100%;
+    max-width: 100%;
   }
   .white, .black
   {
@@ -246,6 +247,7 @@ footer
     position: relative;
     flex-direction: column;
     height: 80vh;
+
     /* padding-right: 30px; */
   }
   .imgwrap
@@ -271,9 +273,12 @@ footer
   }
   .textwrap
   {
-    width: 92%;
+    max-width: 92%;
+    margin-top: 100px;
     /* margin: 20px; */
     text-align: left;
+    margin-right: auto;
+    margin-left: 20px;
   
     
   }
@@ -289,6 +294,8 @@ footer
     justify-content: flex-start;
     align-items: flex-start;
     margin-right: auto;
+    width: auto;
+    overflow: hidden;
   }
   .top h1
   {
@@ -298,7 +305,7 @@ footer
   }
   .top{
     margin-top: -20rem;
-    width: 100%;
+    max-width: 100%;
     ;
   }
   p
@@ -313,7 +320,7 @@ footer
   }
   .swrap .main-image
   {
-    width: 30rem;
+    max-width: auto;
   }
   .section-piece
   {
@@ -324,7 +331,7 @@ footer
   }
   .swrap .main-text
   {
-    width: 100%;
+   width: auto;
   }
   .main-text h1
   {
